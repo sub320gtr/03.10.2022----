@@ -5,10 +5,10 @@
 # copuright MIT
 #/
 
-PACKAGE=hello.osvoj.ru
+PACKAGE=001.osvoj.ru
 
-default: clear hello
-		gcc -o hello.exe ./main.c ./hello.o
+default: clear 001
+		gcc -o 001.exe ./main.c ./001.o
 
 clear:
 		rm -rf ./*.exe ./*.o
@@ -16,8 +16,8 @@ clear:
 doc:
 	 	doxygen ./Doxyfile
 
-hello:
-		gcc -c ./hello.c
+001:
+		gcc -c ./001.c
 
 ### *!
 # com.locate:

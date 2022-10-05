@@ -5,11 +5,11 @@
 \copuright MIT
 \ ldd показывает динамически связанные библиотеки с файлом ldd ./hello.exe
 */
-#include "hello.h"
+#include "001.h"
 
 //Объявляем функцию main
 int main (void) {
 
-    return hello();
+    return start();
     /// Возвращещаем результат функции
 }

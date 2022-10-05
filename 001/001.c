@@ -8,9 +8,18 @@
 ///Подключаем стандартую библиотеку
 #include <stdio.h>
 
-int hello(void) {
-    /// Выводим в стандартный вывод надпись \
-    Hello World!!! (левый слеш, перенос на другую строку)
-    printf("Hello world!!!\n");
+int start (void) {
+    /// Задаем переменные a,b,c
+    int a = 5;
+    int b,c;
+    b = a*3;
+    c = b-a;
+    printf("c = %d;\n", c);
+    printf("a = %d;", a);
+    printf("b = %d;", b);
+    int d;
+    printf("Введите переменную d: ");
+    scanf("%d",&d);
+    printf("d = %d", d);
     return 0;
 }
