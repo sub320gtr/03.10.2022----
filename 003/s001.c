@@ -12,5 +12,5 @@
 float s001(float a, float b, float c) {
     float d;
     d = b*b-4*a*c;
-    return d;
+    return d; // значение переменной возвращения функции
 }

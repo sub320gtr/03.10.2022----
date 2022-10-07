@@ -5,7 +5,7 @@
 \copuright MIT
 \ ldd показывает динамически связанные библиотеки с файлом ldd ./hello.exe
 */
-void start (void);
+void start (void);  // инициализируем фцункцию напрямую без h файла
 
 //Объявляем функцию main
 int main (void) {
