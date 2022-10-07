@@ -7,8 +7,8 @@
 
 #/ PACKAGE=001.osvoj.ru
 
-default: clear 002
-		gcc -o 002.exe ./main.c ./002.o
+default: clear 0022
+		gcc -o 0022.exe ./main.c ./0022.o
 
 clear:
 		rm -rf ./*.exe ./*.o
@@ -16,8 +16,8 @@ clear:
 doc:
 	 	doxygen ./Doxyfile
 
-002:
-		gcc -c ./002.c
+0022:
+		gcc -c ./0022.c
 
 ### *!
 # com.locate:
