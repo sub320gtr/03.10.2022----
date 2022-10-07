@@ -6,5 +6,4 @@
 */
 
 int start(void);
-int s001 (int a); // Описание функцию
-void s002 (void); // Описание функции
+void s001 (int *n, int *p); // Описание функцию

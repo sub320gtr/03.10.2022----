@@ -11,13 +11,12 @@
 
 int start (void) {
     /// Задаем переменные
-    int a,n;
+    int a,n,p = 0;
     printf("\nВведите переменную n  ");
     scanf("%d",&n);
-
     if ( n>0 ) {
-        a = s001(n);
-        printf("\n Число: %d", a);
+        s001(&n, &p);
+        printf("\n Число: %d", p);
     }
     else {
             printf("Данные введены неверно, попробуйте заново: ");
@@ -25,11 +24,11 @@ int start (void) {
         }/**/
     return 0;
 }
-int s001 (int n) {
-    if (n==1) {
-        return 1;
-    }
-    else {
-        return n*s001(n-1);
+void s001 (int *n, int *p) {
+    if (*n>1) {
+        if ( *p == 0) *p = *n;
+        *n = *n - 1;
+        *p = *p * *n;
+        s001 (n,p);
     }
 }
