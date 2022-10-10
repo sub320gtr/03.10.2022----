@@ -39,7 +39,7 @@ class Compl
             }
             return r;
         }
-        void equal(Compl c){
+        Bool equal(Compl с){
             return c.equal( a, b);
         }
         Compl minus(float c, float d){
