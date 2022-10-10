@@ -42,3 +42,6 @@ class Compl
             cout << a << z << "j" << b << "\n";
         }
 };
+Compl operator + (Compl c1, Compl c2) {
+    return Compl (c1.plus(c2));
+}
